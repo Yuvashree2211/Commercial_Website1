@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Foodie Hub Restaurant">
+    <title>Foodie Hub | Restaurant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="announcement">
+    Freshly made, happily served.
+    <span>Open daily · 11 AM – 11 PM</span>
+</div>
+
+<header class="site-header">
+    <a class="brand" href="#home">
+        <span class="brand-mark">F</span>
+        <span>foodie<span class="brand-accent">hub.</span>
+        <small>GOOD FOOD. GOOD MOOD.</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav id="mainNav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">Our Story</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#reservation" class="nav-book">Book a Table ↗</a>
+    </nav>
+</header>
+
+<main>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <div class="eyebrow">WELCOME TO FOODIE HUB</div>
+
+        <h1>Good food.<br><em>Great</em> moments.</h1>
+
+        <p>
+            Fresh ingredients, bold flavours and a little bit
+            of magic in every bite. Your table is waiting.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">Explore Menu ↗</a>
+            <a href="#reservation" class="btn btn-outline">Reserve a Table</a>
+        </div>
+
+        <div class="hero-note">
+            <span>★★★★★</span> 4.9/5 · Loved by food lovers
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about-section" id="about">
+
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85" alt="Restaurant">
+    </div>
+
+    <div class="about-copy">
+        <div class="eyebrow dark">A LITTLE ABOUT US</div>
+
+        <h2>More than a meal.<br><em>It's a feeling.</em></h2>
+
+        <p>
+            At Foodie Hub, we believe the best memories
+            are made around a table.
+        </p>
+
+        <p>
+            We bring together fresh ingredients,
+            comforting favourites and exciting flavours
+            to make every visit special.
+        </p>
+
+        <a href="#contact" class="text-link">Get to know us ↗</a>
+    </div>
+
+</section>
+
+<!-- MENU -->
+<section class="menu-section section" id="menu">
+
+    <div class="section-heading">
+        <div class="eyebrow">TASTY BY NATURE</div>
+        <h2>Our <em>favourites</em></h2>
+        <p>Made fresh. Served with a smile.</p>
+    </div>
+
+    <div class="filters" id="filters">
+        <button class="filter active" data-category="All">All items</button>
+        <button class="filter" data-category="Starters">Starters</button>
+        <button class="filter" data-category="Mains">Mains</button>
+        <button class="filter" data-category="Pizza">Pizza</button>
+        <button class="filter" data-category="Desserts">Desserts</button>
+        <button class="filter" data-category="Drinks">Drinks</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+
+        <article class="food-card" data-category="Starters">
+            <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=700&q=80" alt="Fries">
+            <div class="food-details">
+                <h3>Loaded Crispy Fries</h3>
+                <p>Golden fries, herbs & house sauce</p>
+                <div class="food-bottom">
+                    <b>₹189</b>
+                    <button class="add-btn" data-name="Loaded Crispy Fries" data-price="189">+</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="food-card" data-category="Mains">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Burger">
+            <div class="food-details">
+                <h3>Chicken Burger</h3>
+                <p>Juicy patty, cheese & fresh greens</p>
+                <div class="food-bottom">
+                    <b>₹249</b>
+                    <button class="add-btn" data-name="Chicken Burger" data-price="249">+</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="food-card" data-category="Pizza">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Pizza">
+            <div class="food-details">
+                <h3>Garden Fresh Pizza</h3>
+                <p>Garden veggies, mozzarella & basil</p>
+                <div class="food-bottom">
+                    <b>₹349</b>
+                    <button class="add-btn" data-name="Garden Fresh Pizza" data-price="349">+</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="food-card" data-category="Starters">
+            <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?auto=format&fit=crop&w=700&q=80" alt="Garlic bread">
+            <div class="food-details">
+                <h3>Cheesy Garlic Bread</h3>
+                <p>Toasted bread, garlic butter & cheese</p>
+                <div class="food-bottom">
+                    <b>₹159</b>
+                    <button class="add-btn" data-name="Cheesy Garlic Bread" data-price="159">+</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="food-card" data-category="Desserts">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=80" alt="Ice cream">
+            <div class="food-details">
+                <h3>Chocolate Sundae</h3>
+                <p>Rich chocolate, ice cream & crunch</p>
+                <div class="food-bottom">
+                    <b>₹179</b>
+                    <button class="add-btn" data-name="Chocolate Sundae" data-price="179">+</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="food-card" data-category="Drinks">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=80" alt="Cooler">
+            <div class="food-details">
+                <h3>Berry Bliss Cooler</h3>
+                <p>Refreshing berries and citrus</p>
+                <div class="food-bottom">
+                    <b>₹139</b>
+                    <button class="add-btn" data-name="Berry Bliss Cooler" data-price="139">+</button>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- SPECIAL -->
+<section class="special">
+    <div>
+        <div class="eyebrow">A LITTLE EXTRA HAPPINESS</div>
+        <h2>Make room for<br><em>something special.</em></h2>
+        <p>Good food tastes even better when shared.</p>
+        <a href="#reservation" class="btn btn-primary">Plan your visit ↗</a>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=85" alt="Dining">
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews-section" id="reviews">
+    <div class="section-heading">
+        <div class="eyebrow dark">WORD ON THE TABLE</div>
+        <h2>Good food, <em>good words.</em></h2>
+    </div>
+
+    <div class="review-grid">
+        <blockquote>
+            <div class="stars">★★★★★</div>
+            <p>"The food was fresh and the flavours were amazing!"</p>
+            <b>Ananya R.</b>
+        </blockquote>
+
+        <blockquote>
+            <div class="stars">★★★★★</div>
+            <p>"Great ambience and delicious food. Loved the experience!"</p>
+            <b>Karthik S.</b>
+        </blockquote>
+
+        <blockquote>
+            <div class="stars">★★★★★</div>
+            <p>"Loved the menu and the warm service."</p>
+            <b>Meera P.</b>
+        </blockquote>
+    </div>
+</section>
+
+<!-- RESERVATION -->
+<section class="reservation-section" id="reservation">
+    <div class="reservation-panel">
+        <div class="eyebrow">YOUR TABLE IS WAITING</div>
+        <h2>Let's make<br><em>it a date.</em></h2>
+
+        <p>Send us a reservation request.</p>
+
+        <form id="bookingForm">
+
+            <label>Your name
+                <input name="name" type="text" placeholder="Full name" required>
+            </label>
+
+            <label>Phone number
+                <input name="phone" type="tel" placeholder="Phone number" required>
+            </label>
+
+            <label>Date
+                <input name="date" type="date" id="bookingDate" required>
+            </label>
+
+            <label>Time
+                <select name="time" required>
+                    <option value="">Choose a time</option>
+                    <option>11:00 AM</option>
+                    <option>1:00 PM</option>
+                    <option>6:00 PM</option>
+                    <option>7:00 PM</option>
+                    <option>8:00 PM</option>
+                    <option>9:00 PM</option>
+                </select>
+            </label>
+
+            <label>Number of guests
+                <select name="guests" required>
+                    <option value="">Select guests</option>
+                    <option>1 Guest</option>
+                    <option>2 Guests</option>
+                    <option>3 Guests</option>
+                    <option>4 Guests</option>
+                    <option>5 Guests</option>
+                    <option>6 Guests</option>
+                </select>
+            </label>
+
+            <button type="submit" class="btn btn-primary submit-btn">
+                Request a Table
+            </button>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+            ✓ Your reservation request is ready!
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+    <div>
+        <div class="eyebrow dark">COME SAY HELLO</div>
+        <h2>Find your way<br><em>to flavour.</em></h2>
+        <p>Good food is closer than you think.</p>
+    </div>
+
+    <div class="contact-details">
+        <p><b>VISIT US</b><br>Foodie Hub, Your Street, Tamil Nadu</p>
+        <p><b>CALL US</b><br>+91 98765 43210</p>
+        <p><b>OPENING HOURS</b><br>Every day · 11 AM – 11 PM</p>
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <h2>Foodie Hub.</h2>
+    <p>Made for food, made for moments.</p>
+    <p>© <span id="year"></span> Foodie Hub. All rights reserved.</p>
+</footer>
+
+<!-- CART BUTTON -->
+<button class="cart-fab" id="cartButton">
+    🛍 <span id="cartCount">0</span>
+</button>
+
+<!-- CART PANEL -->
+<div class="cart-panel" id="cartPanel" aria-hidden="true">
+
+    <div class="cart-head">
+        <h3>Your Order</h3>
+        <button id="closeCart">×</button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+        <p class="empty-cart">Your cart is waiting for something tasty.</p>
+    </div>
+
+    <div class="cart-total">
+        <span>Total</span>
+        <b id="cartTotal">₹0</b>
+    </div>
+
+    <button class="btn btn-primary cart-checkout" id="checkoutButton">
+        Continue
+    </button>
+
+    <small class="cart-note">Demo cart only — no payment collected.</small>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- JAVASCRIPT - KEEP THIS AT THE BOTTOM -->
+<script src="script.js"></script>
+
+</body>
+</html>
